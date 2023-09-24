@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #191919;
+  --primary-color: #fff;
+  --secondary-color: #118da8;
+  --paragraph-color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+input {
+  border: 0;
+}
+
+/* BUTTONS */
+
+.btn {
+  padding: 12px 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 6px;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1330px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  padding: 26px 0;
+}
+
+header nav {
+  width: 100%;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.active-nav-link {
+  color: var(--secondary-color);
+}
+
+/* FOOTER */
+
+footer {
+  padding: 100px 0;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  width: 40%;
+}
+
+.logo-footer {
+  width: 224px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links-sound-icons {
+  display: flex;
+  gap: 16px;
+  width: 60%;
+}
+
+.nav-links-footer,
+.nav-links__2 {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  width: 33%;
+}
+
+.sound-icons-group {
+  display: flex;
+  align-items: start;
+  gap: 17px;
+  width: 33%;
+}
+
+/* CONTENT */
+
+.content {
+  /* 375px - footer, 119px - header */
+  min-height: calc(100vh - 375px - 119px);
+}
+
+/* SECTION */
+
+section {
+  padding: 40px 0;
+}
+
+/* SECTION PREVIEW */
+
+#preview {
+  display: flex;
+  align-items: center;
+}
+
+.preview-hero {
+  position: relative;
+}
+
+.decorate-img {
+  position: absolute;
+  left: -26px;
+  top: -26px;
+}
+
+.preview__img {
+  border-radius: 12px;
+}
+
+.preview__title {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  margin-bottom: 90px;
+}
+
+.preview__title__text-underlined {
+  position: relative;
+  display: inline-block;
+}
+
+.preview__title__text-underlined::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 11px;
+  bottom: 0;
+  left: 0;
+  background-image: url(./assets/next.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.preview__title__text-bold {
+  font-weight: 700;
+}
+
+.title-sound-icons {
+  padding: 0 60px;
+}
+
+.sound-icons-group-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* SECTION EPISODES */
+
+#episodes {
+  padding-bottom: 100px;
+}
+
+.episodes-title-button {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.episodes-title {
+  font-size: 64px;
+  letter-spacing: 2.88px;
+  font-weight: 400;
+}
+
+.episodes-collection {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.episodes-collection-item {
+  display: flex;
+  padding: 40px;
+  background-color: black;
+  border-radius: 32px;
+}
+
+.episode-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 50px;
+}
+
+.episode-category {
+  background-color: var(--background-color);
+  padding: 0 16px;
+  font-size: 18px;
+  line-height: 27px;
+  border-radius: 6px;
+}
+
+.episode-number {
+  color: var(--secondary-color);
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.episode-title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: 2.56px;
+  margin-top: -30px;
+}
+
+.episode-description {
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--paragraph-color);
+  margin-bottom: -20px;
+}
+
+/* SECTION HERO DETAILS */
+
+#hero {
+  display: flex;
+  gap: 60px;
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-details__button {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.meethost {
+  color: var(--secondary-color);
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.hero-details__name {
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 79.2px;
+  letter-spacing: 2.88px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.hero-details__description {
+  color: var(--paragraph-color);
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 400;
+}
+
+.hero-img img {
+  border-radius: 12px;
+}
+
+/* SECTION SUBSCRIBE */
+
+#subscribe {
+  padding: 150px 0;
+}
+
+.subscribe-form-wrapper {
+  background-color: black;
+  border-radius: 32px;
+  padding: 60px;
+  display: flex;
+  position: relative;
+}
+
+.form-decorate-img {
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: -20px;
+  left: -20px;
+}
+
+.email-newsletter {
+  color: var(--secondary-color);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.subscribe-title-container {
+  width: 50%;
+}
+
+.subscribe-form {
+  width: 50%;
+}
+
+.subscribe-title {
+  font-size: 65px;
+  line-height: 79.2px;
+  letter-spacing: 2.88px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+.subscribe-form input {
+  background-color: var(--background-color);
+  padding: 26px 19px;
+  width: 100%;
+  border-radius: 6px;
+  color: var(--primary-color);
+}
+
+/* SECTION REVIEWS */
+
+#reviews {
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.reviews-collection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.reviews-item {
+  padding: 55px;
+  background-color: black;
+  border-radius: 32px;
+  width: calc(33.333% - 12px);
+}
+
+.reviews-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews-item__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.2px;
+  color: var(--primary-color);
+}
+
+.reviews-item__author {
+  color: var(--paragraph-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+}
