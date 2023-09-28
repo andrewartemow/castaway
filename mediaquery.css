@@ -1,0 +1,142 @@
+@media screen and (max-width: 1400px) {
+  .preview__title {
+    font-size: 50px;
+  }
+
+  .episodes-title {
+    font-size: 44px;
+  }
+
+  .episode-title {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .hero-details__name {
+    font-size: 44px;
+  }
+
+  .subscribe-title {
+    font-size: 44px;
+  }
+
+  .reviews-item__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .episode-title {
+    font-size: 30px;
+  }
+
+  .episode-description {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .episodes-collection-item {
+    min-height: 300px;
+  }
+
+  .episode-img-wrapper {
+    display: none;
+  }
+
+  .episode-details {
+    padding: 0;
+    display: flex;
+    gap: 40px;
+  }
+
+  .hero-details__button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .hero-details__description {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .reviews-item {
+    width: calc(50% - 12px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .preview-hero {
+    display: none;
+  }
+
+  .title-sound-icons {
+    padding: 0;
+    width: 100%;
+  }
+
+  .preview__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .sound-icons-group-wrapper p {
+    text-align: center;
+  }
+
+  .sound-icons-group {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-details {
+    width: 100%;
+    padding: 0;
+  }
+
+  .subscribe-form-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .subscribe-title-container {
+    width: 100%;
+  }
+
+  .subscribe-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-social-icons {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-links-footer li,
+  .nav-links__2 li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links-sound-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
